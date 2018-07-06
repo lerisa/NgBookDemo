@@ -1,0 +1,39 @@
+<table style="width:50%;border:0.1px rgb(240, 236, 236) solid;margin:20px;">
+  <tr style="height:100px">
+    <td rowspan="2" valign="middle" class="main-votes">
+      <div class="votes">
+        <h2 class="text-center">{{ article.votes }}</h2>
+        <h3 class="text-center">Points</h3>
+      </div>
+    </td>
+    <td colspan="2" valign="top" class="main-links">
+      <div class="links">
+        <h3 class="text-center">{{ article.links }}</h3>
+        <span> ({{ article.domain() }}) </span>
+      </div>
+    </td>
+  </tr>
+  <tr style="height:100px" class="vote-up-and-down">
+    <td class="align-bottom" (click)="voteUp()">
+      <div class="icon">
+        <i class="fa fa-arrow-up"></i>
+        <span>
+          Upvote
+        </span>
+      </div>
+    </td>
+    <td class="align-bottom">
+      <div class="icon">
+        <a (click)="voteDown()">
+          <i class="fa fa-arrow-down"></i>
+          <span>
+            Downvote
+          </span>
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- our voteUp and voteDown methods break the encapsulation of the Article class by changing the article’s internal properties directly. -->
+<!-- The problem is that our ArticleComponent component knows too much about the Article class -->

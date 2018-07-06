@@ -1,0 +1,37 @@
+th,
+td {
+  border: 0.1px rgb(240, 236, 236) solid;
+}
+
+/* .votes {
+  padding: 10%;
+} */
+
+.main-votes {
+  /* font-family: Lucida Sans Unicode; */
+  font-family: Palatino Linotype;
+  color: #495057;
+  background-color: rgba(62, 69, 81, 0.1);
+  /* background-color: rgba(158, 158, 158, 0.1); */
+}
+
+.links {
+  /* padding: 10%; */
+  margin: 20px;
+}
+
+.vote-up-and-down {
+  background-color: rgba(158, 158, 158, 0.1);
+  color: rgba(0, 188, 212, 0.7);
+  /* rgba(3, 169, 244, 0.7) */
+}
+
+.icon {
+  padding: 10%;
+}
+
+.main-links {
+  font-family: Lucida Sans Unicode;
+  color: #495057;
+  background-color: rgba(158, 158, 158, 0.1);
+}
